@@ -1,28 +1,28 @@
 class HxrPicker < Formula
-desc "One fzf picker for every coding-agent CLI: list and resume sessions across opencode, Claude Code, Codex, pi, omp, Qwen Code, Kimi, Copilot CLI and reasonix"
+desc "One fzf picker for every coding-agent CLI: list and resume sessions across opencode, Claude Code, Codex, pi, omp, Qwen Code, Kimi, Copilot CLI, reasonix, Hermes, Goose, Gemini CLI, aider and crush"
 homepage "https://github.com/stondo/hxr"
-url "https://github.com/stondo/hxr/releases/download/v0.7.0/hxr-picker-0.7.0-x86_64-unknown-linux-musl.tar.gz"
-sha256 "aea47e2fea6cf13ae5efa01452268e458efb92ab0d681dec8eb294c977322e9a"
-version "0.7.0"
+url "https://github.com/stondo/hxr/releases/download/v0.8.0/hxr-picker-0.8.0-x86_64-unknown-linux-musl.tar.gz"
+sha256 "209134a7f7659f272a7440e1d7c837d0d65a91297dfb68584e661c268f3784d1"
+version "0.8.0"
 license any_of: ["MIT", "Apache-2.0"]
 
 on_macos do
   if Hardware::CPU.arm?
-    url "https://github.com/stondo/hxr/releases/download/v0.7.0/hxr-picker-0.7.0-aarch64-apple-darwin.tar.gz"
-    sha256 "4065224f08de7223f194ba6faad94df2f94380eded4da0cd1be6842196ac4a5d"
+    url "https://github.com/stondo/hxr/releases/download/v0.8.0/hxr-picker-0.8.0-aarch64-apple-darwin.tar.gz"
+    sha256 "ae87c2a000d4446d535f0560411a93aed054699605d950c4c2af47775096cd15"
   else
-    url "https://github.com/stondo/hxr/releases/download/v0.7.0/hxr-picker-0.7.0-x86_64-apple-darwin.tar.gz"
-    sha256 "7947df175aa0e8fc5171078621457e12dcdf529c9ac9b8da7d3dbc4597b88776"
+    url "https://github.com/stondo/hxr/releases/download/v0.8.0/hxr-picker-0.8.0-x86_64-apple-darwin.tar.gz"
+    sha256 "f0c1ac7085b15691d224611dfdf4b54d0a2982375962bf9dccf265df5dd1bfd3"
   end
 end
 
 on_linux do
   if Hardware::CPU.intel?
-    url "https://github.com/stondo/hxr/releases/download/v0.7.0/hxr-picker-0.7.0-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "aea47e2fea6cf13ae5efa01452268e458efb92ab0d681dec8eb294c977322e9a"
+    url "https://github.com/stondo/hxr/releases/download/v0.8.0/hxr-picker-0.8.0-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "209134a7f7659f272a7440e1d7c837d0d65a91297dfb68584e661c268f3784d1"
   elsif Hardware::CPU.arm?
-    url "https://github.com/stondo/hxr/releases/download/v0.7.0/hxr-picker-0.7.0-aarch64-unknown-linux-gnu.tar.gz"
-    sha256 "1a5bac529194c6b590d9bcf2c8cf29255efcdc687750ff115c030668b906fe58"
+    url "https://github.com/stondo/hxr/releases/download/v0.8.0/hxr-picker-0.8.0-aarch64-unknown-linux-gnu.tar.gz"
+    sha256 "bc4d4fe03dc57cacc8411b494ff3c0b5efc5053507997ea5930f68a44fac8ea8"
   end
 end
 
